@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+header {
+  color: hsl(186, 14%, 43%);
+  width: max-content;
+  margin: 10% auto;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.container {
+  margin:0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+  padding:1.3em 1.5em;
+}
+.data-section {
+  margin: 5% auto;
+  /* border: 1px solid red; */
+}
+
+.amount,
+.people {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+.amount-div img,
+.people-div img {
+  object-fit: contain;
+}
+.amount-div,
+.people-div {
+  background-color: hsl(189, 41%, 97%);
+  padding: 0.4em 1em;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  border-radius: 5px;
+
+}
+.amount-div input,
+.people-div input {
+  background-color: transparent;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  border: none;
+  width: 90%;
+  font-size: 2.5rem;
+  text-align: end;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.tip-percentage p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 3%;
+}
+.tip-percentage button,
+.custom {
+  width: 48%;
+  font-weight: 700;
+  padding: 0.3em 0.5em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  margin: 0.5em 0;
+  font-size: 2.2rem;
+}
+.custom {
+  background-color: hsl(189, 41%, 97%);
+  color: grey;
+}
+.people
+{
+  margin-top: 5%;
+}
+button:focus
+{
+  background-color:  hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.result-section {
+  margin: 10% auto;
+  padding: 1em;
+  height: max-content;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  color: white;
+  padding: 2.5em 1em 2em;
+}
+.tip-amount,
+.total-amount
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.tip-amount p,
+.total-amount p
+{
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
+.subtext
+{
+  color:hsl(184, 14%, 56%);
+  font-size: 1rem;
+}
+.number p
+{
+  display: inline-block;
+}
+.number p,
+.number span
+{
+  font-size: 2.5rem;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+
+}
+.result-section button
+{
+  background-color:  hsl(172, 67%, 45%);
+width: 90%;
+margin: 0 5%;
+border: none;
+border-radius: 5px;
+padding: 0.5em 1em ;
+font-size: 1.8rem;
+color: hsl(183, 100%, 15%);
+font-weight: 700;
+}
+@media screen and (min-width:768px) {
+  header
+  {
+    margin: 12% auto 5%;
+  }
+  
+  .container
+  {
+    border-radius: 20px;
+    display: flex;
+    width: 70%;
+    max-width: 800px;
+    padding: 1em;
+  }
+  .data-section,
+  .result-section
+  {
+    margin: 3% auto;
+    width: 50%;
+  }
+  .data-section{
+    margin-right: 3%;
+  }
+  .tip-percentage button,
+  .custom {
+    width: 30%;
+    font-weight: 700;
+    padding: 0.3em 0.5em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    margin: 0.5em 0;
+    font-size: 2.2rem;
+  }
+  .result-section button
+{
+  background-color:  hsl(172, 67%, 45%);
+width: 90%;
+margin: 25% 5% 0;
+border: none;
+border-radius: 5px;
+padding: 0.5em 1em ;
+font-size: 1.8rem;
+color: hsl(183, 100%, 15%);
+font-weight: 700;
+}
+.custom {
+  background-color: hsl(189, 41%, 97%);
+  color: grey;
+}
+}
